@@ -11,6 +11,8 @@ Term = "22787eb5-b846-44ae-b979-8e399b8463ab"
 
 [compat]
 Term = "2"
+OpenAI = "0.6"
+Preferences = "1"
 julia = "1"
 
 [extras]
