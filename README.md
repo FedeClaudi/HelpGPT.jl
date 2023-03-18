@@ -5,7 +5,7 @@ Combining [ReplGPT.jl](https://github.com/ThatcherC/ReplGPT.jl) and [Term.jl](ht
 The help messages are generated using GPT-3, a state-of-the-art language model from OpenAI. The code for interactive with the OpenAI API is based on `ReplGPT.jl`. 
 
 ## Getting Started:
-You will need to obtain an OpenAI API key from [openai.com](openai.com) and pass it to Julia. ReplGPT.jl
+You will need to obtain an OpenAI API key from [openai.com](openai.com) and pass it to Julia. HelpGPT.jl
 will look for an API key in the module's settings and in 
 the `OPENAI_API_KEY` environment variable as a fallback.
 
@@ -13,12 +13,12 @@ The **recommended approach** is to save the API key in the
 module's settings by running:
 
 ```julia
-julia> using ReplGPT
+julia> using HelpGPT
 
-julia> ReplGPT.setAPIkey("<YOUR KEY HERE>")
+julia> HelpGPT.setAPIkey("<YOUR KEY HERE>")
 ```
 
-The API key can later be cleared with `ReplGPT.clearAPIkey()`.
+The API key can later be cleared with `HelpGPT.clearAPIkey()`.
 
 **Note:** with this approach your API key will be stored in plaintext in a 
 `LocalPreferences.toml` folder in your environment directory. For example, on a Linux computer running Julia 1.8, the key is
